@@ -186,25 +186,49 @@ main {
 
 .feature-content p {
     color: #6C6C6C;
-    font-size:.8rem;
+    font-size: .8rem;
     font-weight: 700;
-   margin-bottom: 13px;
+    margin-bottom: 13px;
 }
 
 /* footer styles */
-footer{
+footer {
 
     background-color: #0A0826;
     text-align: center;
     color: white;
+    padding: 20px 0;
 }
-footer ul{
+
+footer ul {
     display: flex;
     justify-content: center;
     list-style: none;
+    gap: 5px;
 }
-footer a{
+
+footer a {
     color: white;
+}
+
+footer h2 {
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+footer h6 {
+    color:  #D9DBE1;
+    font-size: .7rem;
+    font-weight: 400;
+    padding: 5px 0;
+    
+}
+
+footer p {
+    color:  #D9DBE1;
+    font-size: .7rem;
+    font-weight: 400;
+    margin-bottom: 5px;
 }
 
 
@@ -249,7 +273,7 @@ footer a{
     }
 
     main {
-        padding: 10px 10px;
+        padding: 10px 20px;
     }
 
     .service-image {
@@ -278,7 +302,14 @@ footer a{
         padding: 10px;
         margin-right: 0;
     }
-
+    .feature-section {
+        flex-direction: column-reverse;
+        gap: 30px;
+        margin: 20px 0;
+    }
+    .feature-image {
+        width: 20rem;
+    }
 }
 
 
@@ -330,6 +361,9 @@ footer a{
     .card p {
         font-size: .6rem;
         font-weight: 700;
+    }
+    .feature-content {
+        margin-top: 5px;
     }
 
 }
