@@ -13,7 +13,7 @@ img {
 }
 
 .btn-pr {
-    padding: 10px 20px;
+    padding: 12px 22px;
     border-radius: 20px;
     background: #E02C6D;
     color: white;
@@ -149,9 +149,63 @@ main {
     letter-spacing: 0.252px;
 }
 
+.see-more {
+    text-align: right;
+    margin: 15px;
+}
 
+.see-more a {
+    text-decoration: none;
+    color: rgba(224, 44, 109, 0.87);
+    font-size: 1.2rem;
+}
 
+/* feature section styles */
+.feature-section {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    display: flex;
+    gap: 50px;
+    padding: 0 20px;
+}
 
+.feature-image {
+    width: 75rem;
+}
+
+.feature-content {
+    margin-top: 30px;
+}
+
+.feature-content h2 {
+    color: #0A0826;
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.feature-content p {
+    color: #6C6C6C;
+    font-size:.8rem;
+    font-weight: 700;
+   margin-bottom: 13px;
+}
+
+/* footer styles */
+footer{
+
+    background-color: #0A0826;
+    text-align: center;
+    color: white;
+}
+footer ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+footer a{
+    color: white;
+}
 
 
 /* responsive style */
@@ -213,14 +267,16 @@ main {
     .service-image img {
         width: 4.5rem;
     }
+
     .popular-card {
         grid-template-columns: repeat(1, 1fr);
-        gap:13px;
+        gap: 13px;
     }
-    .card{
-      
+
+    .card {
+
         padding: 10px;
-        margin-right:0;
+        margin-right: 0;
     }
 
 }
@@ -255,22 +311,25 @@ main {
 
     .popular-card {
         grid-template-columns: repeat(3, 1fr);
-        gap:25px;
+        gap: 25px;
     }
-   main {
+
+    main {
         padding: 60px 60px;
     }
+
     .card h2 {
         font-size: 1.1rem;
     }
+
     .card h4 {
         font-size: .9rem;
-    
+
     }
-    
+
     .card p {
         font-size: .6rem;
-        font-weight: 700;      
+        font-weight: 700;
     }
 
 }
