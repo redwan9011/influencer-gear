@@ -11,19 +11,22 @@ body {
 img {
     max-width: 100%;
 }
-.btn-pr{
+
+.btn-pr {
     padding: 10px 20px;
     border-radius: 20px;
     background: #E02C6D;
     color: white;
     border: none;
     font-size: .8rem;
-    
+
 }
-i{
+
+i {
     padding-left: 8px;
 
 }
+
 /* header section styles */
 header {
     padding: 20px 170px;
@@ -34,7 +37,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-   
+
 }
 
 nav h2 {
@@ -87,24 +90,64 @@ nav h2 {
     background-image: url("./images/Circle\ design.svg");
     background-size: cover;
 }
+
 /* Main section styles */
-main{
-    padding: 10px 210px;
+main {
+    padding: 10px 200px;
     background-color: #fff;
 }
+
 /* service image section */
 
-.service-image{
+.service-image {
     margin-top: 70px;
     margin-bottom: 50px;
     display: grid;
-    grid-template-columns: repeat(7,1fr);
+    grid-template-columns: repeat(7, 1fr);
     align-items: center;
     gap: 20px;
-    
+
 }
 
+/* popular section styles */
+.popular-section {}
 
+.popular-section h2 {}
+
+.popular-card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.card {
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+    padding: 15px;
+}
+
+.card h2 {
+    color: #18191F;
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 4px 0;
+}
+
+.card h4 {
+    color: rgba(0, 0, 0, 0.87);
+    padding-bottom: 5px;
+    font-weight: 400;
+    font-size: 1.1rem;
+
+}
+
+.card p {
+    color: #c24170;
+    font-size: .7rem;
+    font-weight: 700;
+    letter-spacing: 0.252px;
+}
 
 
 
@@ -119,73 +162,115 @@ main{
         gap: 10px;
         text-align: center;
     }
-    nav{
+
+    nav {
         flex-direction: column;
     }
+
     .nav-menu ul {
         gap: 12px;
     }
+
     .banner-section {
         margin-top: 50px;
         flex-direction: column-reverse;
         gap: 10px;
-       
+
     }
-    .banner-image{
+
+    .banner-image {
         padding: 20px 20px;
         background-size: cover;
-      
+
     }
+
     .banner-content h1 {
         font-size: 1.6rem;
         margin-bottom: 10px;
     }
-    .btn-pr{
+
+    .btn-pr {
         padding: 15px 20px;
         font-size: 1.2rem;
     }
-    main{
+
+    main {
         padding: 10px 10px;
     }
-    .service-image{
+
+    .service-image {
         margin-top: 30px;
         padding: 0px 15px;
-        grid-template-columns: repeat(4,1fr) ;
+        grid-template-columns: repeat(4, 1fr);
         gap: 13px;
-        
-    }
-    .rakuten{
-        padding-left: 30px;
-    }
-    .service-image img{
-        width: 4.5rem;
+
     }
 
-    
+    .rakuten {
+        padding-left: 30px;
+    }
+
+    .service-image img {
+        width: 4.5rem;
+    }
+    .popular-card {
+        grid-template-columns: repeat(1, 1fr);
+        gap:13px;
+    }
+    .card{
+      
+        padding: 10px;
+        margin-right:0;
+    }
+
 }
 
 
 /* medium and tab screen size */
- @media screen and (min-width:576px)  and (max-width:960px){
-    nav{
+@media screen and (min-width:576px) and (max-width:960px) {
+    nav {
         flex-direction: column;
     }
+
     header {
         padding: 20px 50px;
         gap: 20px;
         text-align: center;
     }
+
     .banner-content h1 {
         font-size: 1.6rem;
         margin-bottom: 10px;
     }
-    .banner-content{
-       
+
+    .banner-content {
+
         font-size: .5rem;
     }
-    .service-image {
-       gap: 20px;
-    }
-   
 
- }
+    .service-image {
+        gap: 15px;
+        padding: 0 50px;
+    }
+
+    .popular-card {
+        grid-template-columns: repeat(3, 1fr);
+        gap:25px;
+    }
+   main {
+        padding: 60px 60px;
+    }
+    .card h2 {
+        font-size: 1.1rem;
+    }
+    .card h4 {
+        font-size: .9rem;
+    
+    }
+    
+    .card p {
+        font-size: .6rem;
+        font-weight: 700;      
+    }
+
+}
